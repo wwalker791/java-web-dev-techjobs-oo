@@ -1,11 +1,11 @@
 package org.launchcode.techjobs_oo;
 
+import org.launchcode.techjobs_oo.Tests.JobField;
+
 import java.util.Objects;
 
-public class Location {
-    private int id;
-    private static int nextId = 1;
-    private String value;
+public class Location extends JobField {
+
 
     public Location() {
         id = nextId;
@@ -20,13 +20,8 @@ public class Location {
         this.value = value;
     }
 
-
     // Custom toString, equals, and hashCode methods:
 
-    @Override
-    public String toString() {
-        return value;
-    }
 
     @Override
     public boolean equals(Object o) {
@@ -43,15 +38,5 @@ public class Location {
 
     // Getters and Setters:
 
-    public int getId() {
-        return id;
     }
 
-    public String getValue() {
-        return value;
-    }
-
-    public void setValue(String value) {
-        this.value = value;
-    }
-}
